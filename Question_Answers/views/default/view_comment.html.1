@@ -1,0 +1,8 @@
+{{extend 'layout.html'}}
+{{for i in post:}}
+{{=i.comment1.comment_body}} <br/>
+By : &nbsp;
+ {{=i.auth_user.first_name}}
+<br/><br/>
+{{pass}}
+<br/><br/>

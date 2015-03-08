@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+
+<h2> Previous Post</h2>
+<table class="table">
+    {{for row in rows:}}
+    <tr>
+        <td><a href="{{=URL('show',args=row.id)}}">{{=row.subject}}</a></td>
+        <td>{{=row.time_stamp}}</td>
+    </tr>
+    {{pass}}
+</table>

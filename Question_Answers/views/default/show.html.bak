@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+<h2>
+    {{=post.subject}}
+</h2>
+<i> Posted by {{=post.Full_name}}</i><br>
+<i> Email is {{=post.email}}</i><br>
+<i>Posted on {{=post.time_stamp}}</i>
+<p>
+    {{=post.body}}
+</p>
+{{=A(T("Comments"),_href=URL('view_comment',args=post.id))}}
+<br/>
+{{pass}}

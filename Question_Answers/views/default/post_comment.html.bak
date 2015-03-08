@@ -1,0 +1,2 @@
+{{extend 'layout.html'}}
+<a href="http://127.0.0.1:8000/stack/appadmin/insert/db/comment1"></a>

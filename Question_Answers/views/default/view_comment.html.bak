@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+{{for i in c:}}
+{{=i.comment1.body}} <br/>
+By : &nbsp;
+ {{=i.auth_user.first_name}}
+<br/><br/>
+{{pass}}
+<br/><br/>
+{{=A(T("Post Comment"),_href=URL('post_comment',args=no))}}
+<span class="likebtn-wrapper" data-theme="drop" data-voting_both="true" data-voting_frequency="1000" data-counter_clickable="true" data-counter_padding="0000" data-i18n_unlike_tooltip="you liked this" data-i18n_undislike_tooltip="you disliked this"></span>
+<script type="text/javascript" src="//w.likebtn.com/js/w/widget.js"></script>
