@@ -1,0 +1,16 @@
+{{extend 'layout.html'}}
+<table class="table">
+    {{for row in k:}}
+    <tr>
+        <td><h4>
+            
+            Book Id</h4><br>{{=row.Book_Id}}</td>
+        <td><h4>
+            
+            Book Name</h4><br>{{=row.Book_Name}}</td>
+        <td><h4>Date of Issue</h4><br>{{=row.Date_of_Issue}}</td>
+        <td><h4>Due Date</h4><br>{{=row.Due_Date}}</td>
+        <td><h4>Fines Due</h4><br>{{=row.Fines_Due}}</td>
+    </tr>
+    {{pass}}
+</table>
